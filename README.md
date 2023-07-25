@@ -1,6 +1,6 @@
 # Frontend Mentor - Social proof section solution
 
-This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+A solution provide by jefflangtech [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA).
 
 ## Table of contents
 
@@ -10,13 +10,11 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  - [Step by step](#step-by-step)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -24,24 +22,17 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 Users should be able to:
 
-- View the optimal layout for the section depending on their device's screen size
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./preview.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: []()
+- Live Site URL: [https://jefflangtech.github.io/social-proof-section/](https://jefflangtech.github.io/social-proof-section/)
 
 ## My process
 
@@ -51,60 +42,44 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+### Step by step
 
-### What I learned
+This is a pretty straight-forward design, nice and simple, but also using a card container kind of layout that is seen frequently. I really wanted to focus on identifying the patterns in the layout and simplifying the CSS rules, even across media queries, and I'm pretty happy with how things turned out. I ended up with 165 lines of CSS, including leaving in the rules for testing purposes and all the organizational comments.
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Total time: 5:02
 
-To see how you can add code snippets, see below:
+1. Project plan (0:39)
+2. Layout notes (0:49)
+3. Setup design system (1:03)
+4. HTML structure and preliminary validation tests (0:21)
+5. Style desktop layout (1:05)
+6. Style mobile layout & media queries (0:38)
+7. Final updates & readme (0:25)
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+**Notes**
+In addition to dropping the designs into photoshop and annotating them in my own way, I also decided to create a Google doc to take notes while I was working through the layouts. 
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+![Desktop Layout Notes](./desktop-layout-notes.jpg)
+![Mobile Layout Notes](./mobile-layout-notes.jpg)
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+The challenges I gave myself with this one were as follows (in addition to the CSS minimalism):
+- Code the buttons so they can be dropped onto any background color and will take on the color of the background...technically they don't take on the color of the background but they do inherit the color of the card. The other text content of the card has its own color(s) anyways.
+- Float the mobile version without too many extra rules...I still think there must be a more elegant way of doing it but I'm satisfied.
+- Use a minmax to control the card widths across the views - success!
+- Incorporate ems - used for both the icon and header margins
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+This was great practice of preparation before coding. The project itself went quickly and that was helpful since I didn't have time to get distracted, or lost on a particularly difficult problem, and then lose my mental momentum. 
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+The next steps would be: 1. more practice, 2. more practice on more difficult layouts while still maintaining good procedures and achieving good results.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Kevin Powell](https://www.youtube.com/@KevinPowell) - Gotta thank Kevin Powell again for the idea of marking up the design before beginning to code. He said he draws on paper printouts, which does sound nice--I would like to save more trees though--so he was using paint and I found using photoshop works great. The only difficulty is making text notes, which is why I incorporated the google doc alongside this time.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [JeffLangTech](https://jefflangtech.github.io/)
+- Frontend Mentor - [@jefflangtech](https://www.frontendmentor.io/profile/jefflangtech)
