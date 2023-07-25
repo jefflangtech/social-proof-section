@@ -45,7 +45,9 @@ Users should be able to:
 
 ### Step by step
 
-This is a pretty straight-forward design, nice and simple, but also using a card container kind of layout that is seen frequently. I really wanted to focus on identifying the patterns in the layout and simplifying the CSS rules, even across media queries, and I'm pretty happy with how things turned out. I ended up with 165 lines of CSS, including leaving in the rules for testing purposes and all the organizational comments.
+This will present a nice challenge working off of a static image design because the figma file is pretty broken. I'm guessing these are the types of things that can happen in the real world so here we go!
+
+----
 
 Total time: 5:02
 
