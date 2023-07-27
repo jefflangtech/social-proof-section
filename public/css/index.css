@@ -17,13 +17,98 @@ html {
   font-family: 'League Spartan', sans-serif;
 }
 body {
+  position: relative;
   background-color: var(--white);
   height: 100dvh;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
   font-size: 2.8rem;
   line-height: 2.4rem;
   letter-spacing: -2px;
+  margin-top: 0.2em;
+  margin-bottom: 0.4em;
+}
+p {
+  font-size: 0.85rem;
+  line-height: normal;
+  font-weight: 400;
+}
+
+/* Overlays for testing */
+#desktop-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 800px;
+  opacity: 0.4;
+  display: none;
+}
+
+/* Utility classes */
+.text-primary {
   color: var(--dark-magenta);
+}
+.text-dark {
+  color: var(--dark-gray-magenta);
+}
+.text-light {
+  color: var(--white);
+}
+.line-high {
+  line-height: 1.1rem;
+  font-weight: 500;
+}
+.medium {
+  font-size: 0.95rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.633px;
+}
+.bold {
+  font-weight: 700;
+}
+
+
+#bg-graphic-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#bg-graphic-bottom {
+  position: absolute;
+  top: 127px;
+  left: 355px;
+}
+main {
+  position: relative;
+  max-width: 1110px;
+  max-height: 582px;
+  /* border: 1px solid hotpink; */
+  margin-block: 4.1rem;
+  margin-inline: 1.2rem;
+}
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2;
+}
+
+/* Testing */
+.main-grid > * {
+  /* border: 1px solid green; */
+}
+/* End Testing */
+
+.header-container {
+  max-width: 22.25rem;
+}
+.reviews-container {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: space-between;
 }
