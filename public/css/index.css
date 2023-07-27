@@ -1,1 +1,29 @@
-f
+/* CSS Organization 
+* - styles reset provided in a reset.css file
+* - 
+*
+*/
+
+/* Root styles */
+:root {
+  --dark-magenta: #512051;
+  --soft-pink: #ee68a4;
+  --dark-gray-magenta: #927B91;
+  --light-gray-magenta: #f7f2f7;
+  --white: #fff;
+}
+html {
+  font-size: 20px;
+  font-family: 'League Spartan', sans-serif;
+}
+body {
+  background-color: var(--white);
+  height: 100dvh;
+  height: 100vh;
+}
+h1 {
+  font-size: 2.8rem;
+  line-height: 2.4rem;
+  letter-spacing: -2px;
+  color: var(--dark-magenta);
+}
