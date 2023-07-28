@@ -29,8 +29,8 @@ h1 {
   font-size: 2.8rem;
   line-height: 2.4rem;
   letter-spacing: -2px;
-  margin-top: 0.2em;
-  margin-bottom: 0.4em;
+  margin-top: 0.18em;
+  margin-bottom: 0.42em;
 }
 p {
   font-size: 0.85rem;
@@ -45,7 +45,8 @@ p {
   left: 0;
   width: 1440px;
   height: 800px;
-  opacity: 0.4;
+  opacity: 0.6;
+  z-index: 100;
   display: none;
 }
 
@@ -62,6 +63,7 @@ p {
 .line-high {
   line-height: 1.1rem;
   font-weight: 500;
+  letter-spacing: -0.304px;
 }
 .medium {
   font-size: 0.95rem;
@@ -71,6 +73,24 @@ p {
 }
 .bold {
   font-weight: 700;
+}
+.quoted::before {
+  content: '“ ';
+}
+.quoted::after {
+  content: ' ”';
+}
+.pink {
+  color: var(--soft-pink);
+}
+.stagger-children > *:nth-child(1) {
+  align-self: start;
+}
+.stagger-children > *:nth-child(2) {
+  align-self: center;
+}
+.stagger-children > *:nth-child(3) {
+  align-self: end;
 }
 
 
@@ -86,9 +106,8 @@ p {
 }
 main {
   position: relative;
-  max-width: 1110px;
-  max-height: 582px;
-  /* border: 1px solid hotpink; */
+  width: 1110px;
+  height: 582px;
   margin-block: 4.1rem;
   margin-inline: 1.2rem;
 }
@@ -96,19 +115,62 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2;
+  gap: 1.4rem;
 }
-
-/* Testing */
-.main-grid > * {
-  /* border: 1px solid green; */
+.main-grid > *:nth-child(-n + 2) {
+  margin-bottom: 2.2rem;
 }
-/* End Testing */
 
 .header-container {
   max-width: 22.25rem;
+}
+.ratings-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.8rem;
 }
 .reviews-container {
   grid-column: 1 / 3;
   display: flex;
   justify-content: space-between;
+  min-height: 13.3rem;
+}
+
+.stars-card {
+  width: min(22.25rem, 87.2vw);
+  display: flex;
+  align-items: center;
+  color: var(--dark-magenta);
+  background-color: var(--light-gray-magenta);
+  border-radius: 0.4rem;
+  padding-block: 1rem;
+  margin-bottom: 0.8rem;
+}
+.stars-card * {
+  margin-left: 1.6rem;
+}
+
+.review-card {
+  width: min(17.5rem, 87.2vw);
+  height: 11.7rem;
+  color: var(--white);
+  background-color: var(--dark-magenta);
+  border-radius: 0.4rem;
+  padding-inline: 1.6rem;
+  padding-top: 2rem;
+  padding-bottom: 1.75rem;
+}
+.reviewer-container {
+  display: grid;
+  grid-template-columns: 40px auto;
+  column-gap: 1.15rem;
+  margin-bottom: 1.43rem;
+}
+.user-image {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  border-radius: 50%;
+}
+.reviewer-container > p {
+  align-self: center;
 }
