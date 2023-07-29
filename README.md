@@ -12,7 +12,6 @@ A solution provide by jefflangtech [Social proof section challenge on Frontend M
   - [Built with](#built-with)
   - [Step by step](#step-by-step)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
@@ -49,37 +48,42 @@ This will present a nice challenge working off of a static image design because 
 
 ----
 
-Total time: 5:02
+Total time: 7:46
 
-1. Project plan (0:39)
-2. Layout notes (0:49)
-3. Setup design system (1:03)
-4. HTML structure and preliminary validation tests (0:21)
-5. Style desktop layout (1:05)
-6. Style mobile layout & media queries (0:38)
-7. Final updates & readme (0:25)
+1. Initial setup (0:26)
+2. Project plan (0:49)
+3. Layout notes (1:07)
+4. Setup design system (0:33)
+5. HTML structure and preliminary validation tests (0:24)
+6. Style desktop layout (2:10)
+7. Style mobile layout & media queries (1:52)
+8. Final updates & readme (0:25)
 
 **Notes**
-In addition to dropping the designs into photoshop and annotating them in my own way, I also decided to create a Google doc to take notes while I was working through the layouts. 
+This is the 2nd go around with the photoshop markup plus google doc notes. The notes are really great because I can make marks on the visual image, but then plan in the google doc the specifics of how I want to implement something. That, along the the excel sheet where I keep all my fonts, calculate rems and ems, keeps me quite organized. I have not had to stop and wonder where I was at with the implementation, or worry about forgetting how I planned to code something on the page.
 
 ![Desktop Layout Notes](./desktop-layout-notes.jpg)
 ![Mobile Layout Notes](./mobile-layout-notes.jpg)
 
-The challenges I gave myself with this one were as follows (in addition to the CSS minimalism):
-- Code the buttons so they can be dropped onto any background color and will take on the color of the background...technically they don't take on the color of the background but they do inherit the color of the card. The other text content of the card has its own color(s) anyways.
-- Float the mobile version without too many extra rules...I still think there must be a more elegant way of doing it but I'm satisfied.
-- Use a minmax to control the card widths across the views - success!
-- Incorporate ems - used for both the icon and header margins
+I used grid and flexbox a LOT, even on small containers with only a few elements. For some reason I have always felt like those were supposed to be used with "large" things--the big container that had a big impact across the page--and not on something so simple as a user image and their name. That appears to be an error in my thinking as it became so simple to implement those little elements that needed some specific visual arrangements that otherwise would have been difficult to get perfect.
+
+I enjoyed pulling off this utility class that created a staggered look, in both column and row layouts:
+
+``` CSS
+.stagger-children > *:nth-child(1) {
+  align-self: start;
+}
+.stagger-children > *:nth-child(2) {
+  align-self: center;
+}
+.stagger-children > *:nth-child(3) {
+  align-self: end;
+}
+```
 
 ### Continued development
 
-This was great practice of preparation before coding. The project itself went quickly and that was helpful since I didn't have time to get distracted, or lost on a particularly difficult problem, and then lose my mental momentum. 
-
-The next steps would be: 1. more practice, 2. more practice on more difficult layouts while still maintaining good procedures and achieving good results.
-
-### Useful resources
-
-- [Kevin Powell](https://www.youtube.com/@KevinPowell) - Gotta thank Kevin Powell again for the idea of marking up the design before beginning to code. He said he draws on paper printouts, which does sound nice--I would like to save more trees though--so he was using paint and I found using photoshop works great. The only difficulty is making text notes, which is why I incorporated the google doc alongside this time.
+First time trying a flexbox on the body to center the main component...and I don't know how that went. A couple of weird moments where I couldn't get things to center right when shifting down to mobile view, then the width rule on the main element would do weird things to the layout, so I'll probably need some more practice with that, and some digging into educational resources as well. The initial setup was great, though, so there's more to it.
 
 ## Author
 
