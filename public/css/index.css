@@ -1,7 +1,10 @@
 /* CSS Organization 
 * - styles reset provided in a reset.css file
-* - 
-*
+* - Root & document level styles (line 7)
+* - Utility classes (line 41)
+* - Element level styles (line 84)
+* - Containers & cards (line 119)
+* - Media queries (line 173)
 */
 
 /* Root styles */
@@ -81,7 +84,7 @@ p {
   align-self: end;
 }
 
-
+/* Element level styles */
 #bg-graphic-top {
   position: absolute;
   top: 0;
@@ -98,7 +101,6 @@ p {
 #mobile-bg-graphic-bottom {
   display: none;
 }
-
 main {
   position: relative;
   max-width: 1110px;
@@ -115,6 +117,7 @@ main {
   margin-bottom: 2.2rem;
 }
 
+/* Containers & cards */
 .header-container {
   max-width: 22.25rem;
 }
@@ -130,7 +133,6 @@ main {
   gap: 1.5rem;
   min-height: 13.3rem;
 }
-
 .stars-card {
   width: min(22.25rem, 87.2vw);
   display: flex;
@@ -144,7 +146,6 @@ main {
 .stars-card img {
   margin-inline: 1.6rem;
 }
-
 .review-card {
   width: min(17.5rem, 87.2vw);
   height: 11.7rem;
@@ -170,7 +171,7 @@ main {
   align-self: center;
 }
 
-
+/* Media queries */
 @media (min-width: 921px) and (max-width: 1158px) {
   .reviews-container {
     min-height: 14.6rem;
