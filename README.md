@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/social-proof-section-lots-of-grid-and-flex-E9eQufwriV](https://www.frontendmentor.io/solutions/social-proof-section-lots-of-grid-and-flex-E9eQufwriV)
 - Live Site URL: [https://jefflangtech.github.io/social-proof-section/](https://jefflangtech.github.io/social-proof-section/)
 
 ## My process
